@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 在移动设备浏览器上user-scalable=no可以禁用其缩放（zooming）功能 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 默认采用高速模式渲染页面 -->
+		<meta name="renderer" content="webkit">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>Bootstrap 101 Template</title>
+		<!-- jquery -->
+		<script src="../static/lib/jquery.min.js"></script>
+		<!-- bootstrap -->
+		<script src="../static/lib/Bootstrap-v3.3.7/js/bootstrap.js"></script>
+		<!-- jquery颜色动画js -->
+		<script src="../static/lib/jquery.color.js"></script>
+		<!-- 本页面js -->
+		<script src="../static/js/navigation/navigation.js"></script>
+		
+		<!-- bootstrap -->
+		<link href="../static/lib/Bootstrap-v3.3.7/css/bootstrap.css" rel="stylesheet" />
+		<!-- animate -->
+		<link rel="stylesheet" href="../static/lib/animate.css" />
+		<!-- 本页面css -->
+		<link href="../static/css/navigation/navigation.css" rel="stylesheet" />
+		<!-- 自定义icon字体 -->
+		<link rel="stylesheet" href="../static/css/icons/iconfont.css" />
+	</head>
+	<body>
+		<!-- 头部导航栏 -->
+		<div class="page-header">
+			<!-- 显示菜单按钮 -->
+			<a href="#" onClick="showSidebar()" class="btn btn-xs btn-default" role="button"><span class="glyphicon glyphicon-align-justify"></a>
+		</div>
+		<!-- 左侧菜单栏 -->
+		<nav class="sidebar-wrapper simple-scroll">
+			<!-- 隐藏菜单按钮 -->
+			<div class="sidebar-brand">
+				<button onClick="hideSidebar()" class="btn btn-xs"><span class="glyphicon glyphicon-chevron-left"></span></button>
+				<a href="#">SIDEBAR</a>
+			</div>
+			<!-- 菜单头部 -->
+			<div class="sidebar-header">
+				<!-- 用户图片 -->
+				<div class="user-pic">
+					<img class="img-responsive img-rounded mCS_img_loaded" src="../static/img/home/user.jpg" />
+				</div>
+				<div class="user-info">
+					<div>username</div>
+					<div>user-role</div>
+					<div class="user-status">
+						<a href="#"><span class="label label-success">Online</span></a>
+					</div>
+				</div>
+			</div>
+			<!-- 功能搜索框 -->
+			<div class="sidebar-search">
+				<div>
+					<div class="input-group">
+						<input id="sidebar-search-input" type="text" class="form-control search-menu" aria-label="Right Align"
+						 placeholder="search..." />
+						<div id="sidebar-search-div" class="simple-scroll">
+							<ul class="sidebar-search-ul"></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 功能菜单栏 -->
+			<div id="sidebar-menu" class="panel-group sidebar-menu">
+				<ul>
+					<!-- 一级菜单列表 -->
+					<li class="header-menu">
+						<span>Dropdown menu</span>
+						<span class="glyphicon glyphicon-plus" onClick="collapseOutAll()"></span>
+						<span class="glyphicon glyphicon-minus" onClick="collapseInAll()"></span>
+					</li>
+					<li class="sidebar-dropdown">
+						<div class="panel panel-default collapse-item">
+							<div class="collapse-item">
+								<a class="fc-menu" data-toggle="collapse" data-parent="#sidebar-menu" href="#basicMenu">
+									<span>常用功能</span>
+									<span class="glyphicon glyphicon-chevron-right item-icon"></span>
+								</a>
+							</div>
+							<div id="basicMenu" class="panel-collapse collapse">
+								<div class="panel-body">
+									<div class="collapse-item">
+										<a id="print-barcode" class="sc-menu" href="#">
+											<span>标签打印</span>
+											<span class="glyphicon glyphicon-print item-icon"></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default collapse-item">
+							<div class="collapse-item">
+								<a class="fc-menu" data-toggle="collapse" data-parent="#sidebar-menu" href="#record-menu">
+									<span>用户模块</span>
+									<span class="glyphicon  glyphicon-chevron-right item-icon"></span>
+								</a>
+							</div>
+							<div id="record-menu" class="panel-collapse collapse">
+								<div class="panel-body">
+									<div class="collapse-item">
+										<a id="user-info" class="sc-menu" href="#">
+											<span>查看个人信息</span>
+											<span class="glyphicon glyphicon-list-alt item-icon"></span>
+										</a>
+									</div>
+									<div class="panel panel-default collapse-item">
+										<div class="collapse-item">
+											<a class="sc-menu" data-toggle="collapse" data-parent="#record-menu" href="#record-classify">
+												<span>权限管理</span>
+												<span class="glyphicon glyphicon-chevron-right item-icon"></span>
+											</a>
+										</div>
+										<div id="record-classify" class="panel-collapse collapse">
+											<div class="panel-body">
+												<!-- <div class="collapse-item">
+													<a id="password-manage" class="tc-menu" href="#">
+														<span>密码管理</span>
+														<span class="iconfont icon-mima item-icon"></span>
+													</a>
+												</div> -->
+												<div class="collapse-item">
+													<a id="permission-manage" class="tc-menu" href="#">
+														<span>用户角色与权限</span>
+														<span class="glyphicon glyphicon-user item-icon"></span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		
+	</body>
+</html>

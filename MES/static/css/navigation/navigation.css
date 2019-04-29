@@ -1,0 +1,251 @@
+html,
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.page-wrapper {
+	height: 100%;
+	background: greenyellow;
+	overflow: hidden;
+	position: relative;
+}
+.page-header{
+	width: 100%;
+	height: 50px;
+	background: #1c232f;
+	position: fixed;
+	top: 0;
+	z-index: 20;
+	margin: 0;
+	border-bottom:1px solid #10151d;
+	line-height: 50px;
+	padding: 0 10px;
+}
+.sidebar-btn{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 30px;
+	background: white;
+}
+
+.sidebar-wrapper {
+	width: 300px;
+	background: #1c232f;
+	height: 100%;
+	max-height: 100%;
+	position: fixed;
+	top: 0;
+	overflow-y: scroll;
+	overflow-x: scroll;
+	z-index: 30;
+}
+
+
+.sidebar-brand {
+	height: 50px;
+	padding: 15px 20px;
+	text-align: center;
+	border-bottom: 1px solid #10151d;
+}
+
+.sidebar-brand a {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.sidebar-header {
+	padding: 20px;
+	overflow: hidden;
+	border-top: 1px solid #202a3c;
+	border-bottom: 1px solid #10151d;
+}
+
+.user-pic {
+	float: left;
+	width: 60px;
+	padding: 2px;
+	border: 1px solid #585858;
+	border-radius: 8px;
+	margin-right: 15px;
+}
+
+.img-rounded {
+	border-radius: 6px;
+}
+
+.user-info {
+	float: left;
+	color: #ccc;
+}
+
+.sidebar-search {
+	border-top: 1px solid #222b35;
+	border-bottom: 1px solid #10151d;
+	padding: 10px 20px;
+	position: relative;
+}
+.sidebar-search #sidebar-search-div{
+	width: 200px;
+	background: #0c1119;
+	position: absolute;
+	top:35px;
+	z-index: 20;
+	padding: 0;
+	max-height: 200px;
+	overflow: auto;
+}
+.sidebar-search #sidebar-search-div .sidebar-search-ul{
+	padding: 0;
+}
+#sidebar-search-div .sidebar-search-item{
+	background: #0c1119;
+	border: none;
+	border-bottom: 1px solid #222b35;
+	margin: 0;
+	list-style: none;
+	padding: 5px;
+	border:1px solid #0c1119;
+	color: #b9b9b9;
+}
+#sidebar-search-div .sidebar-search-item:hover{
+	border:1px solid skyblue;
+}
+
+.search-menu {
+	background: #0c1119;
+	box-shadow: none;
+	color: #9c9c9c;
+	border-color: #3c485d;
+	transition: color .5s;
+}
+
+.sidebar-menu {
+	border-top: 1px solid #222b35;
+	padding-bottom: 10px;
+}
+.sidebar-menu .panel-heading{
+	padding: 0;
+}
+.sidebar-menu .panel-body{
+	padding: 0;
+}
+
+.sidebar-menu ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.sidebar-menu a {
+	display: inline-block;
+	width: 100%;
+	color: #9c9c9c;
+	text-decoration: none;
+	transition: color .3s;
+	position: relative;
+	padding: 5px 30px 5px 20px;
+}
+
+.sidebar-menu a:hover {
+	opacity: 0.5;
+}
+
+
+.sidebar-menu .sidebar-dropdown .collapse-item {
+	background: #0c1119;
+	border: none;
+	border-bottom: 1px solid #222b35;
+	margin: 0;
+}
+
+.header-menu span {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #b9b9b9;
+	padding: 10px 20px;
+	display: inline-block;
+}
+.header-menu .glyphicon {
+	float: right;
+	padding: 10px 10px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.sidebar-dropdown .sc-menu {
+	text-indent: 1em;
+}
+
+.sidebar-dropdown .tc-menu {
+	text-indent: 2em;
+}
+
+.sidebar-dropdown .frc-menu {
+	text-indent: 3em;
+}
+
+.sidebar-dropdown .collapse-item .item-icon {
+	float: right;
+	text-indent: 0;
+	margin-left: 10px;
+}
+
+/* 滚动条样式开始 */
+.simple-scroll {
+	/* margin-left: 100px;
+	border: 1px solid #000;
+	width: 200px;
+	height: 500px;
+	overflow: auto; */
+}
+
+.simple-scroll::-webkit-scrollbar {
+	width: 2px;
+	height: 4px;
+}
+
+/*正常情况下滑块的样式*/
+.simple-scroll::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(218, 218, 218, 0);
+	background-color: white;
+	width: 2px;
+}
+
+/*鼠标悬浮在该类指向的控件上时滑块的样式*/
+.simple-scroll:hover::-webkit-scrollbar-thumb {
+	/* background-color: rgba(0, 0, 0, .2);
+	border-radius: 10px;
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1); */
+}
+
+/*鼠标悬浮在滑块上时滑块的样式*/
+.simple-scroll::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(130, 130, 130, 1);
+	/* border-radius: 10px;
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1); */
+}
+
+/*正常时候的主干部分*/
+.simple-scroll::-webkit-scrollbar-track {
+	background-color: rgba(0, 0, 0, .2);
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1);
+}
+
+/*鼠标悬浮在滚动条上的主干部分*/
+.simple-scroll::-webkit-scrollbar-track:hover {
+	/* background-color: rgba(0, 0, 0, .55);
+	border-radius: 10px;
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1); */
+}
+
+/* 滚动条样式开始 */

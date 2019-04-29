@@ -1,0 +1,52 @@
+.sidebar-dropdown .glyphicon-plus:hover{
+	color:skyblue;
+}
+#main {
+	display: block;
+	width: 100%;
+	background: #494A5F;
+	height: 1000px;
+	overflow-y: scroll;
+	position: relative;
+	margin-top: 50px;
+}
+.main-wrapper a{
+	text-decoration: none;
+	color: #333;
+}
+
+.fun-item{
+	width:150px;
+	height: 150px;
+	margin: 10px 0 0 10px;
+	float: left;
+	position: relative;
+	text-align: center;
+	border-bottom: 2px solid rgba(0,0,0,0);
+}
+
+.fun-item:hover{
+	border-bottom: 2px solid orangered;
+}
+
+.fun-item a{
+	text-decoration: none;
+	color:#333;
+}
+
+.item-pic{
+	display: inline-block;
+	height: 40px;
+    margin: 25px auto 0;
+	font-size: 42px;
+}
+.item-title{
+	width:100%;
+	position: absolute;
+	bottom: 5px;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	display: -webkit-box;
+}

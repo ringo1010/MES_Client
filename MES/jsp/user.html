@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../static/lib/vue-v2.6.10/vue.js"></script>
+		<style>
+			html,body{
+				padding: 0;
+				margin: 0;
+				width: 100%;
+				height: 100%;
+			}
+			#page-wrapper{
+				width: 100%;
+				height: 100%;
+				background: forestgreen;
+				position: relative;
+				border: none;
+				overflow: hidden;
+			}
+			.main-wrapper {
+				display: inline-block;
+				width: 100%;
+				background: #d;
+				height: 100%;
+				overflow-y: scroll;
+				position: relative;
+				margin-top: 50px;
+				z-index: 10;
+			}
+			.main-wrapper a{
+				text-decoration: none;
+				color: #333;
+			}
+			
+			.fun-item{
+				width:150px;
+				height: 150px;
+				margin: 10px 0 0 10px;
+				float: left;
+				position: relative;
+				text-align: center;
+				border-bottom: 2px solid rgba(0,0,0,0);
+			}
+			
+			.fun-item:hover{
+				border-bottom: 2px solid orangered;
+			}
+			
+			.fun-item a{
+				text-decoration: none;
+				color:#333;
+			}
+			
+			.item-pic{
+				display: inline-block;
+				height: 40px;
+			    margin: 25px auto 0;
+			}
+			.item-title{
+				width:100%;
+				position: absolute;
+				bottom: 5px;
+				text-overflow: ellipsis;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 2;
+				overflow: hidden;
+				display: -webkit-box;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="page-wrapper">
+				<script src="../static/js/common/common.js"></script>
+			<!-- <iframe src="common.html" width="100%" height="100%" frameborder="0" scrolling="no" style="position:absolute"></iframe>
+			 --><!-- 主体功能页面 -->
+			<main id="main" class="main-wrapper simple-scroll">
+				<!-- 一个div就是一个功能链接 -->
+				<a id="aaa" href="#">
+					<div class="fun-item" style="background: lightgray;">
+						<span class="item-pic">
+							<i class="iconfont iconfont-lg icon-ditu"></i>
+						</span>
+						<span class="item-title">查看个人信息</span>
+					</div>
+				</a>
+			</main>
+		</div>
+		
+	</body>
+</html>
